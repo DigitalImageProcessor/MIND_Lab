@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on MIND Lab</title>
+    <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/</link>
+    <description>Recent content in Publications on MIND Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://digitalimageprocessor.github.io/MIND_Lab/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatic detection of negative symptoms in schizophrenia via acoustically measured features associated with affective flattening. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/hefei2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/hefei2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A pathology foundation model for cancer diagnosis and prognosis prediction. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/nature1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/nature1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Accurate Measurement of Bone Mineral Density Using Clinical CT Imaging With Single Energy Beam Spectral Intensity Correction. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/zouzuofeng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/zouzuofeng/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acoustic analysis and detection of pharyngeal fricative in cleft palate speech using correlation of signals in independent frequency bands and octave spectrum prominent peak. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/covid-19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/covid-19/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CLC-Net: contextual and local collaborative network for lesion segmentation in diabetic retinopathy images. Neurocomputing.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/wangxiyue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/wangxiyue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Robust Movement Quantification Algorithm of Hyperactivity Detection for ADHD Children Based on 3D Depth Images. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/heling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/heling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acoustic analysis and detection of pharyngeal fricative in cleft palate speech using correlation of signals in independent frequency bands and octave spectrum prominent peak. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/hefei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/hefei/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RetCCL: clustering-guided contrastive learning for whole-slide image retrieval. Medical Image Analysis.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A generalizable and robust deep learning algorithm for mitosis detection in multicenter breast histopathological images. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A wireless physiological parameter monitoring system with a treatment feedback function during neonatal phototherapy. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/heziliang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/heziliang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SEENS: Nuclei segmentation in Pap smear images with selective edge enhancement. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/zhaomeng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/zhaomeng/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Accurate Measurement of Bone Mineral Density Using Clinical CT Imaging With Single Energy Beam Spectral Intensity Correction. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/zhangjing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/two-dimensional-signal/zhangjing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatic hypernasality grade assessment in cleft palate speech based on the spectral envelope method. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/zhangjing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/one-dimensional-signal/zhangjing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real-time mental stress detection using multimodality expressions with a deep learning framework. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/zhangjing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/zhangjing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Calibration-Free Measurement for Monitoring Cellular Calcium Transients Adaptively. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/gaolu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/gaolu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Improving the Accuracy and Efficiency of Abnormal Cervical Squamous Cell Detection With Cytologist-in-the-loop Artifical Intelligence.  </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/improvingtheaccuracy-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/improvingtheaccuracy-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Assessment of the effects of four crosslinking agents on gelatin hydrogel for myocardial tissue engineering applications. </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/jingye/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/hardware/jingye/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep Learning based Pathology Signature Could Reveal Lymph Node Status and Act as a Novel Proganosis Marker across Multiple Cancer Types.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/deeplearningbased/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/deeplearningbased/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The role of Artificial Intelligence in Accurate Interpretation of HER2 Immunohistochemical Scores 0 and 1&#43; in Breast Cancer.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/theroleofartificial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/theroleofartificial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Merging nucleus datasets by correlation-based cross-training.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/mergingnucleus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/mergingnucleus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge based Representation Learning for Nucleus Instance Classification From Histopathological Images.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/knowledgebased/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/knowledgebased/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transformer-based unsupervised contrastive learning for histopathological image classification.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Joint Fully Convolutional and Graph Convolutional Networks for Weakly-supervised Segmentation of Pathology Images.</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/jointfully/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/jointfully/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Hybrid Network for Automatic Hepatocellular Carcinoma Segmentation in H&amp;E-Stained Whole Slide Images.  </title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/publications/pathological-image-processing/wangxiyue4/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

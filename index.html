@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="generator" content="Hugo 0.147.3">
+  <meta charset="UTF-8" />
+  <title>MIND Lab</title>
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+     
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      font-size: 1.25em;  
+      background-color: #F4F4F4;  
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+     
+    .top-nav {
+      background-color: #000;
+      color: #fff;
+      font-size: 1em;
+    }
+    .top-nav .container {
+      max-width: 1200px;
+      margin: 0 auto;
+       
+      padding: 8px 16px;
+      position: relative;
+      left: 30ch; 
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .top-nav ul {
+      list-style: none;
+      display: flex;
+    }
+    .top-nav li {
+      margin-left: 1.5em;  
+    }
+    .top-nav li a {
+      color: #fff;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+    }
+    .top-nav li a:hover {
+      color: #aaa;
+    }
+     
+    .search-icon svg {
+      width: 1.25em;
+      height: 1.25em;
+      fill: currentColor;
+    }
+
+     
+    .second-nav {
+      background-color: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .second-nav .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.75em 1em;
+      position: relative; 
+      left: -95ch;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 2.5em;
+      margin-right: 0.75em;
+    }
+    .vertical-line {
+      width: 1px;
+      height: 3.5em;
+      background-color: #000;
+      margin: 0 0.75em;
+    }
+    .logo-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.125em;
+      color: #172E5C;
+      line-height: 1.2;
+    }
+    .logo-subtext {
+      font-size: 0.875em;
+      color: #555;
+      margin-top: 0.25em;
+      line-height: 1.2;
+    }
+
+     
+    .banner {
+      width: 100%;
+       
+      height:700px;
+      background: url("https://digitalimageprocessor.github.io/MIND_Lab/images/Home.png") no-repeat center center;
+      background-size: cover;  
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .banner .banner-text {
+      display: none;
+    }
+
+     
+    .main-content-wrapper {
+      width: 100%;
+    }
+    .main-content {
+      display: flex;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 1.5em 1em;
+      background-color: #F4F4F4;
+    }
+
+     
+    .sidebar {
+      width: 15em;
+      margin-right: 2em;
+    }
+    .sidebar .menu {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar .menu li {
+      list-style: none;
+       
+      margin-bottom: 1pt;
+    }
+     
+    .sidebar .menu li.home a {
+      display: block;
+      background-color: #172E5C;
+      color: #fff;
+      padding: 3em 1em;  
+      font-size: 1.25em;
+    }
+    .sidebar .menu li.home a:hover {
+       
+      background-color: #172E5C;
+      color: #fff;
+    }
+     
+    .sidebar .menu li.other a {
+      display: block;
+      background-color: #fff;
+      color: #333;
+      padding: 0.75em 1em;
+      font-size: 1.25em;
+      border: 1px solid #e0e0e0;
+    }
+    .sidebar .menu li.other a:hover {
+      background-color: #555555;
+      color: #ffffff;
+    }
+
+     
+    .content {
+      flex: 1;
+    }
+    .content h1 {
+      font-size: 1.75em;
+      margin-bottom: 0.4em;
+      color: #222;
+    }
+    .content p {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 0.3em;
+      text-align: justify;
+    }
+
+     
+    @media (max-width: 768px) {
+      body {
+        font-size: 1.1em;
+      }
+      .main-content {
+        flex-direction: column;
+        padding: 1.25em 1em;
+      }
+      .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+      }
+      .sidebar .menu li {
+        margin-bottom: 1pt;
+      }
+      .sidebar .menu li.home a {
+        padding: 1.875em 1em;
+      }
+      .sidebar .menu li.other a {
+        padding: 0.75em 1em;
+      }
+      .banner {
+        height: 23.75em;  
+        background-size: cover;
+      }
+       
+      .top-nav .container {
+        left: 0;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <nav class="top-nav">
+    <div class="container">
+      <ul>
+        
+        <li><a href="#">Welcome</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Give</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li>
+          <a href="#" class="search-icon" title="Search">
+            <svg viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C8 14 6 12 6 9.5S8 5 10.5 5 15 7 15 9.5 13 14 10.5 14z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div class="second-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" alt="Lab Logo" />
+        <div class="vertical-line"></div>
+        <div class="logo-text-container">
+          <div class="logo-text">MIND Lab</div>
+          <div class="logo-subtext">Medical Intelligence aNd Discovery Laboratory</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="banner"></div>
+
+  
+  <div class="main-content-wrapper">
+    <div class="main-content">
+      
+      <aside class="sidebar">
+        <ul class="menu">
+          <li class="home"><a href="https://digitalimageprocessor.github.io/MIND_Lab/">Home</a></li>
+          <li class="other"><a href="https://digitalimageprocessor.github.io/MIND_Lab/research">Research</a></li>
+          <li class="other"><a href="https://digitalimageprocessor.github.io/MIND_Lab/people">People</a></li>
+          <li class="other"><a href="https://digitalimageprocessor.github.io/MIND_Lab/publications">Publications</a></li>
+          <li class="other"><a href="https://digitalimageprocessor.github.io/MIND_Lab/news">News</a></li>
+          <li class="other"><a href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment">Recruitment</a></li>
+        </ul>
+      </aside>
+
+      
+      <section class="content">
+        <p><span style="font-weight: bold; font-size: 2.8em;">Welcome to the MIND Lab</span></p>
+        <p>
+          <strong>Research Focus:</strong>
+          Our team is dedicated to applying machine learning and deep learning technologies to the 
+          intelligent analysis of multimodal medical images and physiological signals, integrating both 
+          software and hardware research to develop objective, reproducible, and interpretable clinical 
+          assistance systems.
+        </p>
+        <p>
+          <strong>Key Research Areas:</strong> &nbspWe have developed multiple advanced artificial intelligence models that accurately 
+          segment and grade lesions for survival prediction, quantitatively analyze traditional Chinese medicine 
+          tongue images, and synchronize pathological and physiological data via end-to-end bowel-sound acquisition
+           and temporal modeling. By fusing temporal dynamics with graph-topology features in a multi-scale 
+           spatiotemporal network, we extract functional near-infrared spectroscopy patterns to distinguish 
+           psychiatric disorders, while deep-learning and multimodal fusion on CT/MRI enable tumor-growth 
+           forecasting and precise prognostication. Complementing these with wearable smart-medical devices 
+           such as wireless physiological monitors and an EEG platform—for remote health management, and underpinned
+            by rigorous regulatory-science research, our integrated approach facilitates compliant clinical
+             translation of personalized diagnostics and prognostic tools.
+        </p>
+        <p>
+          <strong>Collaborative Vision:</strong>&nbsp
+          Through deep collaboration with clinicians and integration of imaging, signal, and molecular data, 
+          we continuously enhance model robustness and interpretability, accelerating clinical translation 
+          to advance personalized diagnosis and precision prognosis.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

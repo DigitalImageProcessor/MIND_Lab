@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on MIND Lab</title>
+    <link>https://digitalimageprocessor.github.io/MIND_Lab/research/</link>
+    <description>Recent content in Research on MIND Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://digitalimageprocessor.github.io/MIND_Lab/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research</title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/research/computational_pathology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/research/computational_pathology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/research/ml_in_biomedical_image_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/research/ml_in_biomedical_image_analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/research/ai_in_medical_informatics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/research/ai_in_medical_informatics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://digitalimageprocessor.github.io/MIND_Lab/research/intelligent_physiological_monitoring_and_intervention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digitalimageprocessor.github.io/MIND_Lab/research/intelligent_physiological_monitoring_and_intervention/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

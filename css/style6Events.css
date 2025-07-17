@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+
+/* 文字字体，字号，颜色 */
+/* 背景色，长宽，其他 */
+
+.event-grid{
+    height: auto;
+}
+
+.event-grid .small-grid-content{
+    position: relative;
+    top: 0;
+}
+
+.event-grid .small-grid-content h3 a{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.event-grid .small-grid-content .start-time{
+    font-weight: 600;
+    margin: 12px 0;
+    color: rgb(95, 87, 79);
+    text-decoration: none;
+}
+
+.event-grid .small-grid-content .start-time a{
+    
+    font-weight: 600;
+    color: rgb(95, 87, 79);
+    /* text-decoration: none; */
+}
+
+.event-grid .small-grid-content .post-abstract{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.event-icon{
+    position: relative;
+    top:3px;
+}
+
+ /* 嵌入在正文的简单模式 */
+/* .sidebar{
+    padding-top: 0.1em;
+    position: sticky;
+    top: 5.6em;
+    background-color: #9dbeff;
+} */
+
+
+.sidebar{
+    position: fixed;
+    right: 10px;
+    top: 30%;
+    background-color: #cfdeff;
+    border-radius: 10px; /* 设置圆角的大小 */
+    word-wrap: break-word; /* 或 overflow-wrap: break-word; 允许长单词或URL地址在任何字符之间断行 */
+    word-break: break-word; /* 为了兼容性，同时使用这两个属性 */
+}
+
+.accordion {
+    margin: 0 25px 0 0px; 
+    /* 上下保持0，左右各10px空间 */
+    /* 如果需要，可以添加其他样式，比如宽度或背景色 */
+}
+
+.sidebar .accordion a{
+    text-decoration: none;
+}
+
+/* 
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid rgb(162, 175, 185);
+}
+
+table th, table td {
+    padding: 8px; 
+  } */
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 0 0; /* 横向间隔设置为0，纵向间隔设置为10px */
+    border-left: 0.05rem solid #0000001f; /* 最外层边框 */
+    border-right: 0.05rem solid #0000001f; /* 最外层边框 */
+    margin: 10px;
+}
+  
+  table th, table td {
+    border-left: none;
+    border-right: none;
+    padding: 20px 20px; /* 根据需要调整单元格内的空间 */
+  }
+  
+  /* 只为表格的顶部和底部添加边框 */
+  table tr th, table tr td {
+    border-bottom: .05rem solid #0000001f
+  }
+
+  table th {
+    border-top: .05rem solid #0000001f
+  }
+
+  
+  /* 分页导航样式 */
+.pagination ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+  
