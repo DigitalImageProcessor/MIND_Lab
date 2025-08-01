@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="generator" content="Hugo 0.147.3">
+  <meta charset="UTF-8" />
+  <title>MIND Lab</title>
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+     
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      font-size: 1.25em;
+      background-color: #F4F4F4;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+
+     
+    :root {
+       
+      --right-content-offset: 20px;
+      
+      --sidebar-width: 360px; 
+      --nav-item-total-height: 95px;  
+      --nav-item-content-height: 45px;  
+      --nav-item-padding: 0 1.5rem;
+      --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+      --sidebar-bg: #fff;  
+      --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+      --primary-color: #172E5C;
+      --active-color: #007bff;
+      --active-bg: #e1f0ff;
+      --text-color: #333;
+      --hover-bg: #e9ecef;
+      --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+      --logo-font-size: 1.8rem;
+      --nav-font-size: 2rem;
+      --border-color: #eee;
+      --logo-bottom-margin: 1.5rem;
+      --content-top-offset: 6rem;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--sidebar-width) !important;
+      min-width: var(--sidebar-width);
+      max-width: none;
+      height: 100vh;
+      background: var(--sidebar-bg);
+      box-shadow: var(--sidebar-shadow);
+      overflow: hidden;
+      font-family: var(--font-family);
+      z-index: 100;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .sidebar-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0 0 2rem;
+      box-sizing: border-box;
+      top: var(--content-top-offset);
+      overflow-y: auto;
+    }
+
+    .sidebar-header {
+      padding: 0 1.5rem;
+      border-bottom: none;
+      margin-bottom: var(--logo-bottom-margin);
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .sidebar-nav {
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .menu-list li {
+      width: 100%;
+      height: var(--nav-item-total-height);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: background-color 0.2s ease;
+       
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      height: var(--nav-item-content-height);
+      padding: var(--nav-item-padding);
+      color: var(--text-color);
+      font-size: var(--nav-font-size);
+      text-decoration: none;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+    }
+
+    .menu-list li:hover {
+      background-color: var(--hover-bg);
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: calc(1.5rem + 5px);
+    }
+
+    .menu-list li.active-item {
+      background-color: var(--active-bg);
+      border-left: 3px solid var(--active-color);
+      width: 100%;
+      height: var(--nav-item-total-height);
+    }
+
+    .menu-list li.active-item .nav-link {
+      color: var(--active-color);
+      font-weight: 500;
+      background: transparent;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --sidebar-width: 80px;
+        --nav-item-padding: 0;
+        --nav-font-size: 0.9rem;
+      }
+
+      .nav-link {
+        justify-content: center;
+      }
+
+      .menu-list li:hover .nav-link {
+        padding-left: 0;
+      }
+
+      .menu-list li.active-item {
+        border-left: none;
+        border-bottom: 2px solid var(--active-color);
+      }
+    }
+
+    .navbar-logo {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-logo.text-logo {
+      font-size: var(--logo-font-size);
+      font-weight: bold;
+      color: var(--primary-color);
+      letter-spacing: 0.5px;
+    }
+
+    .img-logo img {
+       
+      max-width: 100%;
+      max-height: 120px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .img-logo:hover img {
+      transform: scale(1.03);
+    }
+
+     
+    .main-container {
+      margin-left: var(--sidebar-width);
+      width: calc(100% - var(--sidebar-width));
+      position: relative;
+    }
+    
+     
+    .top-offset-area {
+      height: var(--right-content-offset);
+      background-color: var(--sidebar-bg);
+    }
+
+    .banner-container {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .banner-container::before {
+      content: "";
+      display: block;
+      padding-top: 32%;
+    }
+    .banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("images/Home.png") no-repeat center center;
+      background-size: cover;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .main-content-wrapper {
+      padding: 0px 2rem;
+      box-sizing: border-box;
+    }
+    .main-content {
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 1.5em 1em;
+      background: #F4F4F4;
+    }
+    .content p {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 0.3em;
+      text-align: justify;
+    }
+    .content span {
+      font-weight: bold;
+      font-size: 2.8em;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        
+          <div class="navbar-logo img-logo">
+            <img 
+              src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+              alt="MIND Lab" 
+              height="60"
+            >
+          </div>
+        
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul class="menu-list">
+            
+            
+            
+            
+            <li class="active-item">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/"
+              >
+                Home
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+              >
+                Research
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+              >
+                People
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+              >
+                Publications
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+              >
+                News
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a 
+                class="nav-link" 
+                href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+              >
+                Recruitment
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  
+  <div class="main-container">
+    
+    <div class="top-offset-area"></div>
+    
+    <div class="banner-container">
+      <div class="banner"></div>
+    </div>
+
+    <div class="main-content-wrapper">
+      <div class="main-content">
+        <section class="content">
+          <p><span>Welcome to the MIND Lab</span></p>
+          <p>
+            <strong>Research Focus:</strong>
+            Our team is dedicated to applying machine learning and deep learning technologies to the 
+            intelligent analysis of multimodal medical images and physiological signals, integrating both 
+            software and hardware research to develop objective, reproducible, and interpretable clinical 
+            assistance systems.
+          </p>
+          <p>
+            <strong>Key Research Areas:</strong> &nbspWe have developed multiple advanced artificial intelligence models that accurately 
+            segment and grade lesions for survival prediction, quantitatively analyze traditional Chinese medicine 
+            tongue images, and synchronize pathological and physiological data via end-to-end bowel-sound acquisition
+             and temporal modeling. By fusing temporal dynamics with graph-topology features in a multi-scale 
+             spatiotemporal network, we extract functional near-infrared spectroscopy patterns to distinguish 
+             psychiatric disorders, while deep-learning and multimodal fusion on CT/MRI enable tumor-growth 
+             forecasting and precise prognostication. Complementing these with wearable smart-medical devices 
+             such as wireless physiological monitors and an EEG platform—for remote health management, and underpinned
+              by rigorous regulatory-science research, our integrated approach facilitates compliant clinical
+               translation of personalized diagnostics and prognostic tools.
+          </p>
+          <p>
+            <strong>Collaborative Vision:</strong>&nbsp
+            Through deep collaboration with clinicians and integration of imaging, signal, and molecular data, 
+            we continuously enhance model robustness and interpretability, accelerating clinical translation 
+            to advance personalized diagnosis and precision prognosis.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+
+/* 文字字体，字号，颜色 */
+/* 背景色，长宽，其他 */
+
+.admonition{
+    background-color: white;
+    border-radius: 5px; /* 圆角半径 */
+    /* padding: 10px; 内边距 */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* 阴影效果，可根据需要调整 */
+    margin: 0.8em 0em 0.3em 0em;
+
+}
+
+.admonition-note{
+    border: 1.5px solid rgb(68, 138, 255); /* 黑色边框 */
+}
+
+.clickable-note{
+    background-color: rgb(236, 243, 255);
+}
+
+.admonition-abstract{
+    border: 1.5px solid rgb(0, 176, 255); /* 黑色边框 */
+}
+
+.clickable-abstract{
+    background-color: rgb(229, 247, 255);
+}
+
+.admonition-info{
+    border: 1.5px solid rgb(0, 184, 212); /* 黑色边框 */
+}
+
+.clickable-info{
+    background-color: rgb(229, 248, 251);
+}
+
+.admonition-tip{
+    border: 1.5px solid rgb(0, 191, 165); /* 黑色边框 */
+}
+
+.clickable-tip{
+    background-color: rgb(229, 248, 246);
+}
+
+.admonition-success{
+    border: 1.5px solid rgb(0, 200, 83); /* 黑色边框 */
+}
+
+.clickable-success{
+    background-color: rgb(229, 249, 237);
+}
+
+.admonition-question{
+    border: 1.5px solid rgb(100, 221, 23); /* 黑色边框 */
+}
+
+.clickable-question{
+    background-color: rgb(239, 252, 231);
+}
+
+.admonition-warning{
+    border: 1.5px solid rgb(255, 145, 0); /* 黑色边框 */
+}
+
+.clickable-warning{
+    background-color: rgb(255, 244, 229);
+}
+
+.highlight{
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    border-radius: 5px; /* 圆角半径 */
+    /* border: 1px solid rgb(0, 184, 212);  */
+    padding: 0.5em; 
+    /* height: 2em; */
+    margin: 0.5em;
+}
+
+.highlight-red{
+    border: 1.5px solid rgb(238, 211, 215);
+    background-color: rgb(242, 222, 222);
+    color: rgb(199, 74, 72);
+}
+
+.highlight-green{
+    border: 1.5px solid rgb(214, 233, 198);
+    background-color: rgb(223, 240, 216);
+    color: rgb(70, 136, 107);
+}
+
+.highlight-blue{
+    border: 1.5px solid rgb(188, 232, 241);
+    background-color: rgb(217, 237, 247);
+    color: rgb(58, 135, 173);
+}
+
+.admonition-failure{
+    border: 1.5px solid rgb(255, 82, 82); /* 黑色边框 */
+}
+
+.clickable-failure{
+    background-color: rgb(255, 237, 237);
+}
+
+.admonition-danger{
+    border: 1.5px solid rgb(235, 57, 75); /* 黑色边框 */
+}
+
+.clickable-danger{
+    background-color: rgb(252, 235, 237);
+}
+
+.admonition-bug{
+    border: 1.5px solid rgb(235, 57, 75); /* 黑色边框 */
+}
+
+.clickable-bug{
+    background-color: rgb(252, 235, 237);
+}
+
+.admonition-example{
+    border: 1.5px solid rgb(117, 79, 246); /* 黑色边框 */
+}
+
+.clickable-example{
+    background-color: rgb(240, 237, 254);
+}
+
+.admonition-quote{
+    border: 1.5px solid rgb(158, 158, 159); /* 黑色边框 */
+}
+
+.clickable-quote{
+    background-color: rgb(244, 245, 245);
+}
+
+/* 为 Markdown 内的所有图片设置最大宽度 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 特别针对 admonition 块内的图片进行样式设置 */
+.admonition img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.clickable{
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    border-radius: 5px; /* 圆角半径 */
+    /* border: 1px solid rgb(0, 184, 212);  */
+    padding: 10px; 
+    height: 2em;
+    margin: auto;
+    /* background-color: rgb(229, 248, 251); */
+}
+
+
+
+.clickable img {
+    margin: 0 0.8em 0 0.3em;
+}
+
+
+.clickable span{
+    font-weight: 600;
+    color: black;
+}
+
+.hidden{
+    display: none;
+    border-radius: 5px; /* 圆角半径 */
+    padding: 10px 10px 10px 10px; 
+    background-color: white;
+}
+
