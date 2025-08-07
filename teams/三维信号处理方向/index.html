@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | 三维信号处理方向</title>
+<body><aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    <div id="content">
+<div class="topdown-main">
+	<h1>三维信号处理方向</h1>
+	
+	
+	
+	<p>
+		<h3><a class="title" href="../../MIND_Lab/teams/%E4%B8%89%E7%BB%B4%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E6%96%B9%E5%90%91/ct/">CT/MRI 图像处理小组</a></h3>
+		
+
+
+<i data-feather="calendar"></i>
+<time datetime="0001-01-01">Jan 1, 0001</time>
+
+		<a class="summary" href="../../MIND_Lab/teams/%E4%B8%89%E7%BB%B4%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E6%96%B9%E5%90%91/ct/">
+			
+			<p><p>欢迎来到病理图像小组的主页</p></p>
+		</a>
+	</p>
+	
+</div>
+
+        </div>
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+</body>
+    <style>
+        body {
+          margin: 0;  
+        }
+    </style>
+</html>

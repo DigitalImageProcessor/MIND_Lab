@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | </title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+<style>
+   
+  html {
+    height: 100% !important;
+    background-color: #F4F4F4 !important;
+  }
+  
+  body {
+    min-height: 100% !important;
+    background-color: #F4F4F4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .main-content, #content {
+    background-color: #F4F4F4 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+  }
+  
+   
+  .topdown-main {
+    background-color: #F4F4F4 !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .stick-motto-bar {
+    background-color: #F4F4F4 !important;
+    min-height: 100% !important;
+    width: 100% !important;
+  }
+</style>
+
+<div class="topdown-main">
+    
+    
+    
+    
+    
+     
+    
+
+    <div class="stick-motto-bar">
+        
+        <div class="stick-motto-column">
+            <div class="person" style="margin-top: 10px">
+                <div class="square-container">
+                    <a class="person-img-container" href="../../MIND_Lab/people/jingzhang/">
+                        
+                            <img src="https://digitalimageprocessor.github.io/MIND_Lab/./images/people/ZhangJing.png" alt="Jing Zhang">
+                            
+                        
+                    </a>
+                </div>
+                
+                
+                    <div class="person-title">Chief Scientist, Professor</div>
+                
+
+                <div>
+                    <div class="icons-container">
+                        
+
+                        
+
+                        
+                            <a class="icons" href="https://bme.scu.edu.cn/info/1089/2849.htm">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/home.gif" alt="Homepage" height="30" width="30">
+                            </a>
+                        
+
+                        
+                        
+                        
+                            <a class="icons" href="mailto:jing_zhang@scu.edu.cn?subject=邮件标题&body=邮件内容">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/email.png" alt="Email" height="30" width="30">
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="detail-info">
+                <h1 id="jing-zhang-professor-phd-supervisor-provincial-level-outstanding-talentdirector-of-the-department-of-medical-information-engineering-college-of-biomedical-engineering-sichuan-university">Jing Zhang, Professor, PhD Supervisor, Provincial-level Outstanding Talent;Director of the Department of Medical Information Engineering, College of Biomedical Engineering, Sichuan University.</h1>
+<h1 id="education---work-experience">EDUCATION  &amp; WORK EXPERIENCE：</h1>
+<p><strong>Work Experience:</strong></p>
+<p>Sep 2012 – Present, <strong>Professor</strong>, College of Biomedical Engineering, Sichuan University</p>
+<p>Sep 2011 – Sep 2012, <strong>Assistant Dean</strong>, School of Media Innovation, Nanyang Technological University, Singapore</p>
+<p>Sep 2009 – Sep 2011,  <strong>Senior Research Fellow</strong>, Institute for Infocomm Research (I²R), Singapore</p>
+<p>May 2009 – Sep 2009, <strong>Senior Research Fellow</strong>, Singapore General Hospital, Singapore</p>
+<p>Feb 2003 – May 2009, <strong>Research Fellow</strong>, National University of Singapore (NUS), Singapore</p>
+<p>Jul 2001 – Feb 2003, <strong>Systems Analyst,</strong> IT Department, Real Estate Developers&rsquo; Association of Singapore (REDAS)</p>
+<p>Jul 1999 – Jul 2001, <strong>Research Fellow</strong>, National University of Singapore (NUS), Singapore</p>
+<hr>
+<p><strong>Education:</strong></p>
+<p>Jul 2003 – May 2009, <strong>Ph.D</strong>. in Medical Image Processing Department of Electrical and Computer Engineering, National University of Singapore (NUS), Singapore</p>
+<p>Jul 1999 – Jul 2001, <strong>M.Eng</strong>. in Computer Engineering Department of Electrical and Computer Engineering, National University of Singapore (NUS), Singapore</p>
+<p>Sep 1994 – Jul 1999, <strong>B.Eng</strong>. in AutomationDepartment of Automation, Tsinghua University, China</p>
+<h1 id="research-expertise">RESEARCH EXPERTISE：</h1>
+<p>Biomedical image analysis, Computational pathology, Image segmentation　　</p>
+<h1 id="admission-information">Admission Information：　　</h1>
+<p>1、Master of Science, Biomedical Engineering/Biomedical Image Processing</p>
+<p>2、Doctor of Engineering, Biomedical Engineering/Biomedical Image Processing</p>
+<h1 id="scientific-research-work">Scientific Research Work：</h1>
+<ol>
+<li>
+<p>Since September 2013, as Principal Investigator (PI), I have led the NSFC General Program &ldquo;Mechanism of Beam Hardening Effects on CBCT-based Alveolar Bone Strength Assessment&rdquo;;   served as Sub-project PI for the National High-Tech R&amp;D Program (863 Program)   &ldquo;Mixed Reality-Based Training and Real-Time Decision System for Minimally Invasive Brain/Spinal Cord Surgery&rdquo;;   obtained two Sichuan Provincial Sci-Tech Projects (&ldquo;Key Technologies for Laparoscopic Surgery Simulation&rdquo; and &ldquo;Key Technologies for Craniomaxillofacial Surgery Simulation&rdquo;);   and directed multiple additional grant-funded and industry-sponsored research initiatives.</p>
+</li>
+<li>
+<p>From September 2009 to August 2012, as Sub-project Lead for &ldquo;Image Processing &amp; Modeling&rdquo; under Singapore’s National Research Foundation project &ldquo;Computer- and Robot-Assisted Surgical Simulation System&rdquo; (total funding: SGD 3 million), I managed proposal development, budgeting, and competitive bidding, delivering world-leading outcomes in laparoscopic surgery simulation and securing two international patents.</p>
+</li>
+<li>
+<p>From May to September 2009, as a Senior Research Fellow for the Singapore Ministry of Health project &ldquo;Osteoporosis Study in Chinese and Indian Populations,&rdquo; I completed CT image segmentation, calibration, and bone mineral density calculations for 120 patients.   I innovatively proposed and implemented a monoenergetic beam hardening correction algorithm to calibrate medical CT images, achieving results matching dual-energy X-ray absorptiometry (DXA) accuracy.   The first-author paper from this study was accepted by the top-tier journal <em>IEEE Transactions on Medical Imaging</em> .</p>
+</li>
+</ol>
+<h1 id="projects-"><strong>Projects</strong> ：</h1>
+<ol>
+<li>
+<p>National Natural Science Foundation of China (NSFC) General Program, &ldquo;Mechanism of Beam Hardening Effects on CBCT-based Alveolar Bone Strength Assessment&rdquo;, 2015–2019, Principal Investigator (PI)</p>
+</li>
+<li>
+<p>Ministry of Education Project, &ldquo;CT Image-Based Liver Diagnosis and Treatment Assistance System&rdquo;, 2015–2017, Principal Investigator (PI)</p>
+</li>
+<li>
+<p>Sichuan Provincial Sci-Tech Department Project, &ldquo;Big Data-Driven Pharmaceutical Supply Chain Service Software System&rdquo;, 2020–2022, Principal Investigator (PI)</p>
+</li>
+<li>
+<p>Sichuan Provincial Sci-Tech Department Project, &ldquo;Key Technologies for Craniomaxillofacial Surgery Simulation&rdquo;, 2020–2021, Principal Investigator (PI)</p>
+</li>
+<li>
+<p>Provincial-Municipal Joint Project (Sichuan Province), &ldquo;CT Image-Guided Lung Biopsy Surgical Path Planning&rdquo;, 2021–2022, Principal Investigator (PI)</p>
+</li>
+</ol>
+<h1 id="international-patents">International Patents：</h1>
+<p>[1]	W.M. Huang, J. Liu, J. Zhou, <strong>J. Zhang</strong>, B.H. Lee, W.K. Wong, N.M. Tan, Z. Zhang, F.S. Yin, C.K. Chui, S. Chang, Y. Su, Robot Assisted Surgical Training, US9,786,202B2, 10 Oct 2017.</p>
+<p>[2]	T. Yang, L.J. Yang, J. Liu, C.K. Chui, W.M. Huang, <strong>J. Zhang</strong>, J. Zhou, B.H. Lee, N.M. Tan, W.K. Wong, F.S. Yin, S. Chang, Y. Su, Robotic Surgical Trainer for Image-guided Robot Assisted Surgical training, US 8,764,448 B2, Sept 2011.</p>
+<h1 id="chinese-patents">Chinese Patents：</h1>
+<p>[1] Instrument for Automatic Hypernasality Recognition in Cleft Palate Speech, Ling He, Pengyu Yin, Heng Yin, Qi Liu, <strong>Jing Zhang</strong>, Qiongmin Zhang, CN201520549138</p>
+<p>[2] Portable Device for Consonant Omission Recognition in Cleft Palate Speech, Ling He, Rui Li, Heng Yin, Qi Liu, <strong>Jing Zhang</strong>, Qiongmin Zhang, CN201520548976</p>
+<p>[3] Device for Verifying Beam Hardening Effects on CBCT Imaging Quality, <strong>Jing Zhang</strong>; Yongliang Tian; Jiayin Ren; Wei Tang; Weidong Tian, ZL201610861156.8</p>
+<p>[4] Device for Verifying Beam Hardening Effects on CBCT Imaging Quality, <strong>Jing Zhang</strong>; Yongliang Tian; Jiayin Ren; Wei Tang; Weidong Tian, ZL2016210897215</p>
+<p>[5] Dental Preparation Surgery Simulation Method and Device, <strong>Jing Zhang</strong>; Sen Yang; Mingming Huang; Wei Tang; Weidong Tian, CN201710554695.1</p>
+<p>[6] Blink Frequency Analysis Method and System Based on Image Processing, <strong>Jing Zhang</strong>; Jia Fu; Fei He; Yuxuan Meng; Lihua Deng; Yanming Xu, ZL201910939612.X</p>
+<p>[7] Automatic Detection Method and Device for Rolling Trajectory Surface Based on Multi-Angle Discrimination, Rongquan Fan; Feng Zhu; Hanfeng He; Junyong Liu; Tao Li; Junjie Lü; <strong>Jing Zhang</strong>; Liang Du et al., ZL202010315095.1</p>
+<p>[8] Automatic Target Diameter Measurement Method and System Based on Visual Information, Ziqiang Ming; Rongquan Fan; Junyong Liu; Caibin Wu; Gang Tang; Chengqiang Wang; <strong>Jing Zhang</strong>; Yang Tang et al., CN113989359A</p>
+<p>[9] Automatic Target Diameter Measurement Method and System Based on Visual Information and Feature Extraction, Rongquan Fan; Caibin Wu; Junyong Liu; Yang Tang; Xiaoping Chen; <strong>Jing Zhang</strong>; Chengqiang Wang et al., CN113963051A</p>
+<p>[10] AI-Based Tongue Coating Analysis Method for Body Fluid Assessment, <strong>Jing Zhang</strong>; Di Zeng; Ling He; Gang Yang, ZL202310217570.5</p>
+<p>[11] AI-Based Tongue Coating Evaluation Method, <strong>Jing Zhang</strong>; Di Zeng; Ling He; Gang Yang, ZL202310223940.6</p>
+<p>[12] Monitoring Device for ECG Signals, PPG Signals, and Skin Tone, Gang Yang, Ziliang He, <strong>Jing Zhang</strong>; Benjin Zhang; Ling He; Zhenghua Xiao et al., CN218074976U</p>
+<p>[13] NFC-Based Animal Monitoring Device, Gang Yang, Ziliang He, <strong>Jing Zhang</strong>; Benjin Zhang; Ling He; Zhenghua Xiao et al., CN217590799U</p>
+<p>[14] Wearable Real-Time Wireless Monitoring Device for Neonatal Jaundice and Blood Oxygen, Gang Yang, Ziliang He, Benjin Zhang; <strong>Jing Zhang</strong>; Guohong Tang; Ling He et al., CN115089172A</p>
+<p>[15] Mid-Infrared All-Fiber Laser with Multi-Wavelength Same Repetition Rate and Adjustable Power Ratio, Shurong Jiang, Chen Wei, Han Zhang, <strong>Jing Zhang</strong>, Hongyu Luo, CN114039265B</p>
+<p>[16] Vital Sign Detection Device and System, Ye He, Sen Yang; <strong>Jing Zhang</strong>; Site Mo, Xiyue Wang, CN208784708U</p>
+<p>[17] Vital Sign Detection Device, Method, and System, Sen Yang; Ye He, <strong>Jing Zhang</strong>; Site Mo, Xiyue Wang, CN107713991A</p>
+<h1 id="representative-papers">Representative Papers：</h1>
+<p>[1]	X. Wang, J. Zhao, E. Marostica, W. Yuan, J. Jin, J. Zhang, R. Li, H. Tang, K. Wang, Y. Li, F. Wang, Y. Peng, J. Zhu, <strong>Jing Zhang</strong>, C. Jackson, Jun Zhang, D. Dillon, N. Lin, L. Sholl, T. Denize, D. Meredith, K. Ligon, S. Signoretti, S. Ogino, J. Golden, M. Nasrallah, X. Han, S. Yang*, K. Yu* (2024). A pathology foundation model for cancer diagnosis and prognosis prediction. Nature, 1-9.</p>
+<p>[2]	Qiao, M., Chang, L., Zhou, Z., Jun, S. C., He, L., &amp; <strong>Zhang, J</strong>. (2025). A two-branch framework for blood pressure estimation using photoplethysmography signals with deep learning and clinical prior physiological knowledge. Physiological Measurement.</p>
+<p>[3]	J. Zhang, <strong>J. Zhang</strong>, P. Han, XZ. Chen, Y. Zhang, W. Li, J. Qin, L. He*. Path planning algorithm for percutaneous puncture lung mass biopsy procedure based on the multi-objective constraints and fuzzy optimization. Physics in Medicine &amp; Biology. 2024 Apr 15;69(9).*</p>
+<p>[4]	W. Tang, C. Shi, Y. Li, Z. Tang, G. Yang, <strong>J. Zhang</strong>, L. He* (2024). Keypoints-based Multi-cue Feature Fusion Network (MF-Net) for action recognition of ADHD children in TOVA assessment. Bioengineering, 11(12), 1210</p>
+<p>[5]	T. Chen, Y. Chen, Z. Zhou, Ying Zhu, Ling He, <strong>Jing Zhang</strong>*(2025). Deep learning-based automated tongue analysis system for assisted Chinese medicine diagnosis. Frontiers in Physiology, Volume 16 - 2025.</p>
+<p>[6]	W. Yuan, J. Cheng, Y. Gong, L. He*, <strong>J.  Zhang</strong>. MACG-Net: Multi-axis cross gating network for deformable medical image registration. Computers in Biology and Medicine (2024):108673.*</p>
+<p>[7]	Y. Gong, <strong>J. Zhang</strong>, J. Cheng, W. Yuan, L. He*. Automatic tooth segmentation for patients with alveolar clefts guided by tooth descriptors. Biomedical Signal Processing and Control 90 (2024): 105821*</p>
+<p>[8]	X. Wang, Y. Du, S. Yang, <strong>J. Zhang</strong>, M. Wang, J. Zhang*, W. Yang, J. Huang, X. Han*. RetCCL: clustering-guided contrastive learning for whole-slide image retrieval. Medical Image Analysis 83 (2023): 102645.</p>
+<p>[9]	X. Wang, <strong>J. Zhang</strong>, S. Yang, J. Xiang, F. Luo, M. Wang, J. Zhang*, W. Yang, J. Huang, X. Han*. A generalizable and robust deep learning algorithm for mitosis detection in multicenter breast histopathological images. Medical Image Analysis (2023)</p>
+<p>[10]	X. Wang, Y. Fang, S. Yang, D. Zhu, M. Wang, <strong>J. Zhang</strong>*, J. Zhang, J. Cheng, K. Tong, X. Han. CLC-Net: contextual and local collaborative network for lesion segmentation in diabetic retinopathy images. Neurocomputing (2023)Vol 527, Page 100-109.</p>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>

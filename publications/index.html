@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | Publications</title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+
+<style>
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+   
+  :root {
+     
+    --main-title-font-size: 3.2rem;
+    --main-title-font-weight: bold;
+    --main-title-bottom-margin: 20px;  
+
+     
+    --research-dir-font-size: xx-large;
+    --research-dir-font-weight: bold;
+    --research-dir-top-margin: 40px;    
+    --research-dir-bottom-margin: 40px;  
+
+     
+    --content-left-offset: -150px;
+
+     
+    --content-inner-top-padding: 90px;
+    --last-paper-bottom-gap: 40px;
+    --container-margin-top: -20px;
+    --paper-card-width: 50%;
+    --paper-spacing: 16px;  
+    --section-spacing: 30px;
+    --hr-bottom-margin: 20px;  
+
+     
+    --page-bg-color: #f5f5f5;
+    --content-bg-color: #f5f5f5;
+    --hr-color: #ddd;
+    --author-link-color: rgb(146,157,192);
+    --doi-link-color: rgb(146,157,192);
+    --doi-label-color: black;
+
+     
+    --conf-journal-font-size: x-large;
+    --author-font-size: medium;
+    --doi-font-size: large;
+    --doi-label-font-size: larger;
+    --author-font-weight: normal;
+    --doi-font-weight: bold;
+  }
+
+   
+  .topdown-main {
+    width: 100vw;
+    background-color: var(--page-bg-color);
+    margin-top: var(--container-margin-top);
+    padding-top: var(--content-inner-top-padding);
+     
+    margin-left: var(--content-left-offset);
+  }
+
+   
+  .publications-column.full4footer {
+    width: 100%;
+    padding: 0 20px;
+    background-color: var(--content-bg-color);
+  }
+
+   
+  .papers-container {
+    padding-bottom: var(--last-paper-bottom-gap);
+  }
+
+   
+  .paper-bar {
+    width: 100%;
+    margin-bottom: var(--paper-spacing);
+  }
+  .paper-card {
+    width: var(--paper-card-width);
+    margin: 0 auto;
+  }
+
+   
+  h1 {
+    width: var(--paper-card-width);
+    margin: 0 auto var(--main-title-bottom-margin);
+    text-align: center;
+    font-size: var(--main-title-font-size) !important;
+    font-weight: var(--main-title-font-weight) !important;
+  }
+
+   
+  .publications-column > hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--hr-color);
+    margin: 0 0 var(--hr-bottom-margin);
+  }
+
+   
+  h2 {
+    width: var(--paper-card-width);
+    margin: var(--research-dir-top-margin) auto var(--research-dir-bottom-margin);
+    text-align: center;
+    font-size: var(--research-dir-font-size);
+    font-weight: var(--research-dir-font-weight);
+  }
+
+   
+  .paper-FirstAuthor,
+  .paper-OtherAuthors {
+    font-size: var(--author-font-size);
+    font-weight: var(--author-font-weight);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .paper-doi {
+    font-size: var(--doi-font-size);
+    font-weight: var(--doi-font-weight);
+    margin-top: 4px;
+  }
+
+   
+  .main-content {
+    background-color: var(--page-bg-color) !important;
+  }
+</style>
+
+<div class="topdown-main">
+  <div class="publications-column full4footer">
+    <h1>Publications(partial)</h1>
+    <hr aria-hidden="true">
+
+
+
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+
+
+
+<div class="papers-container">
+  
+    
+      
+      
+      
+      
+        <h2>Computational Pathology</h2>
+        
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A pathology foundation model for cancer diagnosis and prognosis prediction. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Nature, 2024</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1038/s41586-024-07894-z" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1038/s41586-024-07894-z</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                RetCCL: clustering-guided contrastive learning for whole-slide image retrieval. Medical Image Analysis.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Medical Image Analysis, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2022.102645" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2022.102645</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A generalizable and robust deep learning algorithm for mitosis detection in multicenter breast histopathological images. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Medical Image Analysis, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2022.102703" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2022.102703</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Improving the Accuracy and Efficiency of Abnormal Cervical Squamous Cell Detection With Cytologist-in-the-loop Artifical Intelligence.  
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Modern Pathology, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.modpat.2023.100186" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.modpat.2023.100186</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Deep Learning based Pathology Signature Could Reveal Lymph Node Status and Act as a Novel Proganosis Marker across Multiple Cancer Types.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">British Journal of Cancer, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1038/s41416-023-02262-6" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1038/s41416-023-02262-6</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                The role of Artificial Intelligence in Accurate Interpretation of HER2 Immunohistochemical Scores 0 and 1&#43; in Breast Cancer.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Modern Pathology, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.modpat.2022.100054" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.modpat.2022.100054</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Merging nucleus datasets by correlation-based cross-training.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Modern Pathology, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2022.102705" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2022.102705</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Knowledge based Representation Learning for Nucleus Instance Classification From Histopathological Images.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">IEEE Transcations on  ON Medical Imaging, 2022</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1109/tmi.2022.3201981" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1109/TMI.2022.3201981</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Transformer-based unsupervised contrastive learning for histopathological image classification.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Medical Image Analysis, 2022</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2022.102559" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2022.102559</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Joint Fully Convolutional and Graph Convolutional Networks for Weakly-supervised Segmentation of Pathology Images.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Medical Image Analysis, 2021</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2021.102183" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2021.102183</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A Hybrid Network for Automatic Hepatocellular Carcinoma Segmentation in H&amp;E-Stained Whole Slide Images.  
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Medical Image Analysis, 2021</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.media.2020.101914" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.media.2020.101914</a>
+              </div>
+              
+            </div>
+          </div>
+        
+      
+    
+      
+      
+      
+      
+        <h2>ML in Biomedical Image Analysis</h2>
+        
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                CLC-Net: contextual and local collaborative network for lesion segmentation in diabetic retinopathy images. Neurocomputing.
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Neurocomputing, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.neucom.2023.01.013" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.neucom.2023.01.013</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A Robust Movement Quantification Algorithm of Hyperactivity Detection for ADHD Children Based on 3D Depth Images. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">IEEE transactions on image processing, 2022</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1109/tip.2022.3185793" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1109/TIP.2022.3185793</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                SEENS: Nuclei segmentation in Pap smear images with selective edge enhancement. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Future Generation Computer System-the International Journal of Escince, 2021</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1016/j.future.2020.07.045" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1016/j.future.2020.07.045</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Accurate Measurement of Bone Mineral Density Using Clinical CT Imaging With Single Energy Beam Spectral Intensity Correction. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">IEEE Transactions on Medical Imaging, 2010</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1109/tmi.2010.2045767" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1109/TMI.2010.2045767</a>
+              </div>
+              
+            </div>
+          </div>
+        
+      
+    
+      
+      
+      
+      
+        <h2>AI in Medical Informatics</h2>
+        
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Automatic detection of negative symptoms in schizophrenia via acoustically measured features associated with affective flattening. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">IEEE Transactions on Automation Science and Engineering, 2021</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1109/tase.2020.3022037" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1109/TASE.2020.3022037</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Acoustic analysis and detection of pharyngeal fricative in cleft palate speech using correlation of signals in independent frequency bands and octave spectrum prominent peak. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">BioMedical Engineering OnLine, 2020</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1186/s12938-020-00782-3" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1186/s12938-020-00782-3</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Acoustic analysis and detection of pharyngeal fricative in cleft palate speech using correlation of signals in independent frequency bands and octave spectrum prominent peak. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">BioMedical Engineering OnLine, 2020</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1186/s12938-020-00782-3" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1186/s12938-020-00782-3</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Automatic hypernasality grade assessment in cleft palate speech based on the spectral envelope method. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Biomedical Engineering-Biomedizinische Technik, 2020</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1515/bmt-2018-0181" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1515/bmt-2018-0181</a>
+              </div>
+              
+            </div>
+          </div>
+        
+      
+    
+      
+      
+      
+      
+        <h2>Intelligent physiological monitoring and intervention Research</h2>
+        
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Accurate Measurement of Bone Mineral Density Using Clinical CT Imaging With Single Energy Beam Spectral Intensity Correction. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">IEEE Sensors Journal, 2024</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1109/jsen.2024.3477419" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1109/JSEN.2024.3477419</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A wireless physiological parameter monitoring system with a treatment feedback function during neonatal phototherapy. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Physiological Measurement, 2023</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1088/1361-6579/acf43c" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1088/1361-6579/acf43c</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Real-time mental stress detection using multimodality expressions with a deep learning framework. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Frontiers in Neuroscience, 2022</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.3389/fnins.2022.947168" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.3389/fnins.2022.947168</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                A Calibration-Free Measurement for Monitoring Cellular Calcium Transients Adaptively. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Applied Biochemistry and Biotechnology, 2022</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1007/s12010-021-03771-x" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1007/s12010-021-03771-x</a>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div class="paper-bar">
+            <div class="paper-card">
+              <p class="paper-title">
+                Assessment of the effects of four crosslinking agents on gelatin hydrogel for myocardial tissue engineering applications. 
+                <span style="font-size: var(--conf-journal-font-size); font-weight: var(--conf-journal-font-weight);">Biomedical Materials, 2021</span>
+              </p>
+              <span class="paper-FirstAuthor">
+                
+              </span>
+              
+
+              
+              
+              <div class="paper-doi">
+                <span style="font-size: var(--doi-label-font-size); color: var(--doi-label-color);">Doi:</span>
+                <a href="https://doi.org/10.1088/1748-605x/abfff2" target="_blank" rel="noopener" style="color: var(--doi-link-color); text-decoration: underline;">10.1088/1748-605X/abfff2</a>
+              </div>
+              
+            </div>
+          </div>
+        
+      
+    
+  
+</div>
+
+  </div>
+</div>
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | </title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+<style>
+   
+  html {
+    height: 100% !important;
+    background-color: #F4F4F4 !important;
+  }
+  
+  body {
+    min-height: 100% !important;
+    background-color: #F4F4F4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .main-content, #content {
+    background-color: #F4F4F4 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+  }
+  
+   
+  .topdown-main {
+    background-color: #F4F4F4 !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .stick-motto-bar {
+    background-color: #F4F4F4 !important;
+    min-height: 100% !important;
+    width: 100% !important;
+  }
+</style>
+
+<div class="topdown-main">
+    
+    
+    
+    
+    
+     
+    
+
+    <div class="stick-motto-bar">
+        
+        <div class="stick-motto-column">
+            <div class="person" style="margin-top: 10px">
+                <div class="square-container">
+                    <a class="person-img-container" href="../../MIND_Lab/people/xiaohan/">
+                        
+                            <img src="https://digitalimageprocessor.github.io/MIND_Lab/./images/people/HanXiao.jpg" alt="Xiao Han">
+                            
+                        
+                    </a>
+                </div>
+                
+                
+                    <div class="person-title">Chief Scientist，Professor</div>
+                
+
+                <div>
+                    <div class="icons-container">
+                        
+                        <a class="icons" href="https://scholar.google.com/citations?user=XGVV3gEAAAAJ&amp;hl=en">
+                            <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/googlescholar.svg" alt="Google Scholar" height="30" width="30">
+                        </a>
+                        
+
+                        
+
+                        
+                            <a class="icons" href="https://www.linkedin.com/in/xiaohan2009">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/home.gif" alt="Homepage" height="30" width="30">
+                            </a>
+                        
+
+                        
+                        
+                        
+                            <a class="icons" href="mailto:xiao.han2018@outlook.com?subject=邮件标题&body=邮件内容">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/email.png" alt="Email" height="30" width="30">
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="detail-info">
+                <h1 id="xiao-hanprofessorworlds-top-2-scientists-by-stanford-universitynational-high-level-talent">Xiao Han，Professor，World’s top 2% scientists by Stanford University，National high-level talent</h1>
+<h1 id="education--work-experience">EDUCATION &amp; WORK EXPERIENCE：</h1>
+<p><strong>Work Experience:</strong></p>
+<p>May 2025 — present, <strong>Professor</strong>，College of Biomedical Engineering, Sichuan University</p>
+<p>May 2018 — May 2025,  <strong>Principal Scientist &amp; Deputy General Manager</strong>, AI Healthcare Center, Tencent Inc.</p>
+<p>March 2006 — April 2018, <strong>Senior Scientist</strong>, Elekta Inc.</p>
+<p>September 2004 — March 2006, <strong>Postdoctoral Fellow</strong>, Center for Biomedical Imaging, Massachusetts General Hospital</p>
+<hr>
+<p><strong>Education:</strong></p>
+<p>October 2003,  <strong>Ph.D</strong>. Electrical Engineering, The Johns Hopkins University</p>
+<p>May 2001, <strong>M.Sc</strong>. Electrical Engineering, The Johns Hopkins University</p>
+<p>June 1997 , <strong>M.Eng</strong>. Electrical Engineering, National University of Singapore</p>
+<p>July 1994, <strong>B.Sc.</strong>  Electrical Engineering, University of Science and Technology of China, China</p>
+<h1 id="research-expertise">RESEARCH EXPERTISE：</h1>
+<p>Image processing, Biomedical image analysis, Computational pathology,</p>
+<p>Image segmentation, Deformable image registration, Machine Learning, Deep Learning.</p>
+<h1 id="admission-information">Admission Information：　　</h1>
+<p>1、Master of Science, Biomedical Engineering/Biomedical Image Processing</p>
+<p>2、Doctor of Engineering, Biomedical Engineering/Biomedical Image Processing</p>
+<h1 id="project-outcomepartial">Project outcome（Partial）：</h1>
+<p>• Research and development of machine learning methods for medical image analysis. Published over 100 papers in internationally renowned journals and conferences.</p>
+<p>• Led the development of the Augmented Reality Intelligent Microscope product, which was granted the Class II medical device certificate by China NMPA in 2021.</p>
+<p>• Led the development of the Tencent AIMIS Digital Pathology Platform product, which obtained the EU CE certification in January 2022, and won an Advanced Technology Achievement award in the 2022 China International Big Data Industry Expo.</p>
+<p>• Led the collaboration project with Mindray Medical to develop China’s first AI-assisted peripheral blood cell analysis product, which enables better identification of different blood cells with high throughput. The product was granted the ”Green Pathway” for innovative medical devices by China NMPA in 2022, breaking the monopoly of an imported brand in the blood cell analysis market.</p>
+<p>• Hold 40 granted China national patents and 30+ US patents. One patent received the Outstanding National Patent Award of China in 2022. Two other patents received the Annual Patent Gold Awards of Tencent in 2022 &amp; 2023</p>
+<h1 id="honors-and-awards">HONORS AND AWARDS：</h1>
+<ol start="3">
+<li>
+<p>Won the Excellence Award at the 23rd China National Patent Awards in 2022</p>
+</li>
+<li>
+<p>Won two Gold Prizes at Tencent’s Annual Patent Awards in 2022 &amp; 2023 respectively</p>
+</li>
+<li>
+<p>Won the Advanced Technology Achievement Award at the 2022 China International Big Data Industry Expo</p>
+</li>
+<li>
+<p>Ranked as the Worlds’ Top 2% Most-cited Scientists by Stanford University, 2020 — 2024</p>
+</li>
+<li>
+<p>First Prize, AAPM Thoracic Image Auto-Segmentation Challenge 2017, in the 59th AAPM Annual Meeting, Denver, USA</p>
+</li>
+<li>
+<p>First Prize, LiTS - Liver Tumor Segmentation Challenge 2017, in the IEEE International Symposium on Biomedical Imaging (ISBI) 2017, Melbourne, Australia</p>
+</li>
+<li>
+<p>First Prize, Head and Neck Auto-Segmentation Challenge 2010, in the 13th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2010),
+Beijing, China</p>
+</li>
+<li>
+<p>First Prize, EMPIRE10 – Pulmonary Image Registration Challenge 2010, in the 13th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI
+2010), Beijing, China</p>
+</li>
+<li>
+<p>First Prize, Head and Neck Auto-Segmentation Challenge 2009, in the 12th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2009),
+London, UK</p>
+</li>
+</ol>
+<h1 id="representative-papers">Representative Papers：</h1>
+<p>[1]	X. Wang, J. Zhao, E. Marostica, W. Yuan, J. Jin, J. Zhang, R. Li, H. Tang, K. Wang, Y. Li, F. Wang, Y. Peng, J. Zhu, Jing Zhang, C. Jackson, Jun Zhang, D. Dillon, N. Lin, L. Sholl, T. Denize, D. Meredith, K. Ligon, S. Signoretti, S. Ogino, J. Golden, M. Nasrallah, <strong>X. Han</strong>, S. Yang*, K. Yu* (2024). A pathology foundation model for cancer diagnosis and prognosis prediction. Nature, 1-9.</p>
+<p>[2] P. Xue, H. Xu, H. Tang, H. Weng, H. Wei, Z. Wang, H. Zhang, Y. Weng, L. Xu, H. Li, S. Seery, <strong>X. Han</strong>, H. Ye, Y. Qiao. Improving the Accuracy and Efficiency of Abnormal Cervical Squamous Cell Detection With Cytologist-in-the-loop Artifical Intelligence. Modern Pathology, 36(8):100186, 2023.</p>
+<p>[3] P. Xue, H. Xu, H. Tang, W. Wu, S. Seery, <strong>X. Han</strong>, H. Ye, Y, Jiang, Y. Qiao. Assessing Artificial Intelligence Enabled Liquid-based Cytology for Triaging HPV-positive Women: A Populationbased Cross-sectional Study. Acta Obstetricia et Gynecologogica Scandinavica, 102(8):1026–1033, 2023.</p>
+<p>[4] S. Cheng, J. Xiang, X. Wang, J. Zhang, S. Yang, W. Yang, J. Zheng, <strong>X. Han</strong>*. Deep Learningbased Pathology Signature Could Reveal Lymph Node Status and Act as a Novel Proganosis Marker across Multiple Cancer Types. British J. Cancer, 129:46–53, 2023.</p>
+<p>[5] X. Wang, Y. Fang, S. Yang, D. Zhu, M. Wang, J. Zhang, J. Zhang, J. Cheng, K. Tong, <strong>X.Han</strong>*. CLC-Net: Contextual and Local Collaborative Network for Lesion Segmentation in Diabetic Retinopathy Images. Neurocomputing, 527:100-109, 2023.</p>
+<p>[6] Z. Yang, X. Wang, J. Xiang, J. Zhang, S. Yang, X. Wang, W. Yang, Z. Li, <strong>X. Han</strong>, Y. Liu. The Devil is in the Details: A Small-lesion Sensitive Weakly Supervised Learning Framework for Prostate Cancer Detection and Grading. Virchows Archiv, 482(3):525-538, 2023.</p>
+<p>[7] S. Wu, M. Yue, J. Zhang, X. Li, Z. Li, H. Zhang, X. Wang, <strong>X. Han</strong>, L. Cai, J. Shang, Z. Jia, X. Wang, J. Li, Y. Liu. The role of Artificial Intelligence in Accurate Interpretation of HER2 Immunohistochemical Scores 0 and 1+ in Breast Cancer. Modern Pathology, 36(3):100054, 2023.</p>
+<p>[8] W. Zhang, J. Zhang, X. Wang, S. Yang, J. Huang, W. Yang, W. Wang, <strong>X. Han</strong>*. Merging Neucleus Datasets by Correlation-based Cross-Training. Med. Imag. Anal., 84(102705), 2023.</p>
+<p>[9] X. Wang, J. Zhang, S. Yang, J. Xiang, F. Luo, M. Wang, J. Zhang, W. Yang, J. Huang, <strong>X. Han</strong>*. A Generalizable and Robust Deep learning Algorithm for Mitosis Detection in Multicenter Breast Histopathological Images. Med. Imag. Anal., 84(102703), 2023.</p>
+<p>[10] J. Xiang, X. Wang, X. Wang, J. Zhang, S. Yang, W. Yang, <strong>X. Han</strong>, Y. Liu. Automatic Diagnosis and grading of Prostate Cancer with Weakly Supervised Learning on Whole Slide Images. Computers in Biology and Medicine. 152(106340), 2023.</p>
+<p>[11] X. Wang, X. Du, S. Yang, J. Zhang, M. Wang, J. Zhang, W. Yang, J. Huang, <strong>X. Han</strong>*. RetCCL: Clustering-guided Contrastive Learning for Whole-slide image retrieval. Med. Imag. Anal.. 83(102645), 2023.</p>
+<p>[12]  S. Yang, T. Shen, Y. Fang, X. Wang, J. Zhang, W. Yang, J. Huang, <strong>X. Han</strong>**. DeepNoise: Signal and Noise Disentanglement based on Classifying Flurescent Microscopy Images via Deep Learning. Genomics, Proteomics &amp; Bioinformatics. 20(5):989–1001, 2022.*</p>
+<p>[13] X. Wang, S. Yang, J. Huang, M. Wang, J. Zhang, W. Yang, J. Huang, <strong>X. Han</strong>*. Transformerbased Unsupervised Contrastive Learning for histopathological Image Classification. Med. Imag. Anal., 81(102559), 2022.</p>
+<p>[14] W. Zhang, J. Zhang, S. Yang, X. Wang, W. Yang, J. Huang, W. Wang, <strong>X. Han</strong>*. Knowledgebased Representation Learning for Nucleus Instance Classification From Histopathological Images. IEEE Tran. Med. Imag., 41(12):3939–3951, 2022.</p>
+<p>[15] X. Wang, R. Wang, S. Yang, J. Zhang, M. Wang, D. Zhong, J. Zhang, <strong>X. Han</strong>*. Combining Radiology and Pathology for Automatic Glioma Classification. Front. Bioeng. Biotechnol.10(841958), 2022.</p>
+<p>[16] J. Zhang, Z. Hua, K. Yan, K. Tian, J. Yao, E. Liu, M. Liu, <strong>X. Han</strong>*. Joint Fully Convolutional and Graph Convolutional Networks for Weakly-supervised Segmentation of Pathology Images. Med. Imag. Anal., vol. 73, 2021.</p>
+<p>[17] M.Yue, J. Zhang, X. Wang, K. Yan, L. Cai, K. Tian, S. Niu, <strong>X. Han</strong>, Y. Yu, J. Huang, D.Han, J. Yao, Y, Liu. Can AI-Assisted Microscope facilitate breast HER2 Interpretation? A Multi-institute Ring Study. Virchows Archiv, 479(3):443–449, 2021.</p>
+<p>[18] X. Wang, L. Wang, H. Bu, N. Zhang, M. Yue, Z. Jia, L. Cai, J. He, Y. Wang, X. Xu, S. Li, K.Xiao, K. Yan, K. Tian, <strong>X. Han</strong>, J. Huang, J. Yao, Y. Liu. How can artificial intenlligence models assist PD-L1 expression scoring in breast cancer: results of multi-institutional ring studies. NPJ Breast Cancer, 7(1):1–10, 2021.</p>
+<p>[19] L. Cai, K. Yan, H. Bu, M. Yue, P. Dong, X. Wang, L. Li, K. Tian, H. Shen, J. Zhang, J. Shang, S. Niu, D. Han, C. Ren, J. Huang, <strong>X. Han</strong>, J. Yao, Y. Liu. Improving Ki-67 Assessment Concordance with AI-Empowered Microscope: A Multi-institutional Ring Study. Histopathology, 79(4):544–555, 2021.</p>
+<p>[20] H. Tang, D. Cai, Y. Kong, H. Ye, Z. Ma, H. Lv, L. Tuo, Q. Pan, Z. Liu, <strong>X. Han</strong>*. Cervical Cytology screening facilitated by an artificial intelligence microscope: A Preliminary Study. Cancer Cytopathology, 129(9):693–700, 2021.</p>
+<p>[21] X. Wang, S. Yang, Y. Fang, Y. Wei, M. Wang, J. Zhang, <strong>X. Han</strong>*. SK-Unet: An Improved U-Net Model with Selective Kernel for the Segmentation of LGE Cardiac MR Images. IEEE Sensors J. 21(10):11643–11653, 2021.</p>
+<p>[22] W. Liang, J. Yao, A. Chen, &hellip;, <strong>X. Han</strong>, W. Huan, &hellip;, N. Zhong, J. Huang, J. He. Early triage of criticially ill COVID-19 patients using deep learning. Nat. Commun. 11 (3543), 2020.</p>
+<p>[23] X. Wang, Y. Fang, S. Yang, D. Zhu, M. Wang, J. Zhang, K. Tong, <strong>X. Han</strong>*. A Hybrid Network for Automatic Hepatocellular Carcinima Segmentation in H&amp;E-stained Whole Slice Images. Med. Imag. Anal., 68(101914), 2021.</p>
+<p>[24] X. Wang, T. Shen, S. Yang, J. Lan, Y. Xu, M. Wang, J. Zhang, <strong>X. Han</strong>*. A Deep Learning Algorithm for Automatic Detection and Classification of Acute Intracranial Hemorrhages in head CT Scans. NeuroImage: Clinical, 32(102785), 2021.</p>
+<p>[25] X. Wang, S. Yang, J. Lan, Y. Fang, J. He, M.Wang, J. Zhang, <strong>X. Han</strong>*. Automatic Segmentation of Pneumothorax in Chest Radiographs Based on a Two-stage Deep Learning Method. IEEE Trans. Cognit. Dev. Syst., 2020.</p>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>

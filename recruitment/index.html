@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | Recruitment</title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+  
+  <style>
+     
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+     
+    :root {
+      --max-content-width: 1100px;       
+      --container-padding-top: 0px;     
+      --top-adjustment: 70px;          
+      
+       
+      --header-font-size: 3.2rem;
+      --header-color: #172E5C;
+      --section-spacing: 2rem;
+      --title-font-weight: bold;
+      --primary-font: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+      --text-font-size: 1.3rem;  
+      --subheader-font-size: 2.8rem;
+      --header-underline-thickness: 2px;
+      --header-margin-top: 0;
+      --header-margin-bottom: 0.5rem;
+      --subheader-margin-top: 0;
+      --subheader-margin-bottom: 0.5rem;
+    }
+
+     
+    .recruitment-container {
+      max-width: var(--max-content-width);  
+      margin: 0 auto;
+      padding: 0 1rem;
+       
+      padding-top: var(--container-padding-top);
+      transform: translateY(var(--top-adjustment));
+      font-family: var(--primary-font);  
+    }
+    
+    .recruitment-container h1 {
+      font-size: var(--header-font-size);
+      color: var(--header-color);
+      font-weight: var(--title-font-weight);
+      margin-top: var(--header-margin-top);
+      margin-bottom: var(--header-margin-bottom);
+    }
+    
+    .recruitment-container h1::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: var(--header-underline-thickness);
+      background-color: var(--header-color);
+      margin-top: 0.3rem;
+    }
+    
+    .section {
+      margin-bottom: var(--section-spacing);
+    }
+    
+    .section-title {
+      font-weight: var(--title-font-weight);
+      margin-bottom: 0.7rem;
+      font-size: 1.2em;
+    }
+    
+    .job-list {
+      display: grid;
+      gap: 2.5rem;
+    }
+    
+    .job-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .job-item:last-child {
+      border-bottom: none;
+    }
+    
+    .job-title {
+      font-size: var(--subheader-font-size);
+      font-weight: var(--title-font-weight);
+      margin-top: var(--subheader-margin-top);
+      margin-bottom: var(--subheader-margin-bottom);
+      color: #172E5C;
+    }
+    
+    .job-meta {
+      color: #666;
+      margin-bottom: 1.2rem;
+      font-size: 0.95rem;
+    }
+    
+     
+    .job-content {
+      font-size: var(--text-font-size);
+      line-height: 1.6;  
+    }
+    
+     
+    .job-content p,
+    .job-content li,
+    .job-content span,
+    .job-content div {
+      font-size: inherit;  
+    }
+    
+     
+    @media (max-width: 768px) {
+      :root {
+        --header-font-size: 2rem;
+        --subheader-font-size: 1.5rem;
+        --text-font-size: 1.1rem;  
+        --header-margin-bottom: 0.3rem;
+        --subheader-margin-bottom: 0.3rem;
+      }
+    }
+  </style>
+
+  
+  <div class="recruitment-container">
+    <h1>招聘信息</h1>
+    
+    <div class="job-list">
+      
+      <div class="job-item">
+        <h2 class="job-title">聘科研助理</h2>
+        
+        <div class="job-meta">发布时间: 2025年07月01日</div>
+        
+        <div class="job-content">
+          <h3 id="四川大学生物医学工程学院张劲韩骁教授联合课题组诚聘科研助理欢迎具有生物医学工程相关专业背景熟悉医学图像处理医学信号处理相关技术的同学加入">四川大学生物医学工程学院张劲、韩骁教授联合课题组诚聘科研助理，欢迎具有生物医学工程相关专业背景，熟悉医学图像处理、医学信号处理相关技术的同学加入。</h3>
+<p><strong>专业需求</strong>：生物医学工程、计算机、电子信息等相关专业</p>
+<p><strong>应聘要求</strong>：</p>
+<ol>
+<li>具备优秀的英文文献阅读与理解能力，能高效、准确地阅读和理解相关领域的国际前沿专业文献</li>
+<li>具备较强的编程能力， 熟练掌握至少一种主流编程语言（如Python, C++等），具备良好的代码实现、调试及优化能力</li>
+<li>拥有扎实的医学信号与医学图像处理算法基础， 掌握医学信号或医学图像处理的核心算法原理，并具备实际应用相关算法解决问题的能力</li>
+<li>善于与人沟通，具有较强的团队意识</li>
+<li>按时完成分配的任务，并能积极与同事配合完成总体目标</li>
+</ol>
+<p><strong>学历要求</strong>：硕士及以上</p>
+<p><strong>待遇</strong>：税前5000-10000元/月，在符合学校博士招生基本条件的前提下，将获得本课题组博士生名额的优先申请权</p>
+<p><strong>联系方式</strong>：有兴趣者请向邮箱 <a href="mailto:xiao_han@scu.edu.cn">xiao_han@scu.edu.cn</a>（韩老师）投递简历</p>
+
+        </div>
+      </div>
+      
+      <div class="job-item">
+        <h2 class="job-title">招聘博士后</h2>
+        
+        <div class="job-content">
+          <h3 id="本课题组致力于人工智能驱动的精准医疗技术创新聚焦计算病理学多模态医学影像分析医疗信号智能解析及智能医疗设备研发四大领域构建算法-硬件-临床全链条研究体系通过开发可解释ai模型自适应分析框架及低成本监测设备攻克癌症诊断疾病预测术中监护等临床难题诚邀博士后加入医工交叉创新团队共同实现降低医疗成本提升诊疗可及性的使命并享受学术发展通道与产业转化资源支持">本课题组致力于人工智能驱动的精准医疗技术创新，聚焦<strong>计算病理学、多模态医学影像分析、医疗信号智能解析及智能医疗设备研发</strong>四大领域，构建“算法-硬件-临床”全链条研究体系。通过开发<strong>可解释AI模型、自适应分析框架及低成本监测设备</strong>，攻克癌症诊断、疾病预测、术中监护等临床难题。诚邀博士后加入医工交叉创新团队，共同实现“降低医疗成本、提升诊疗可及性”的使命，并享受学术发展通道与产业转化资源支持。</h3>
+<p><strong>专业需求</strong>：生物医学工程、计算机、电子信息等相关专业</p>
+<p><strong>应聘要求</strong>：</p>
+<ol>
+<li>符合四川大学博士后招收要求，必须全时脱产从事博士后研究；</li>
+<li>年龄在35周岁以下；</li>
+<li>已有博士学位且博士毕业三年以内；</li>
+<li>有较好的科研基础并具备良好的中英文写作能力，在医学图像或信号处理领域发表过两篇以上高水平论文</li>
+<li>具备独立科研能力，上进心和责任心强，工作积极有责任心，具有良好的团队合作精神</li>
+</ol>
+<p><strong>应聘资料：</strong></p>
+<p>1.个人简历（文件名：姓名-简历-意向导师名）</p>
+<p>2.博士导师推荐信</p>
+<p>3.代表申请人最高学术水平和科研成果的论文、专著、专利或奖励等</p>
+<p><strong>待遇</strong>：具体待遇面议</p>
+<p><strong>联系方式</strong>：有兴趣者请向邮箱 <a href="mailto:xiao_han@scu.edu.cn">xiao_han@scu.edu.cn</a>（韩老师）投递简历</p>
+
+        </div>
+      </div>
+      
+      <div class="job-item">
+        <h2 class="job-title">Research Assistant Position Available</h2>
+        
+        <div class="job-content">
+          <h3 id="joint-research-group-of-professor-zhang-jing-and-professor-han-xiao-at-sichuan-university-school-of-biomedical-engineering-now-recruiting-research-assistants-we-invite-applications-from-candidates-with-backgrounds-in-biomedical-engineering-or-related-fields-particularly-those-proficient-in-medical-image-processing-and-medical-signal-processing-technologies">Joint Research Group of Professor Zhang Jing and Professor Han Xiao at Sichuan University School of Biomedical Engineering, Now Recruiting Research Assistants. We invite applications from candidates with backgrounds in Biomedical Engineering or related fields, particularly those proficient in medical image processing and medical signal processing technologies.</h3>
+<p><strong>Disciplinary Background Requirements:</strong>
+Biomedical Engineering, Computer Science, Electronic Information, or related disciplines.</p>
+<p><strong>Position Requirements:</strong></p>
+<p>1、Advanced English Literature Proficiency: Demonstrated ability to efficiently and accurately comprehend cutting-edge international research literature.</p>
+<p>2、Strong Programming Skills: Proficiency in at least one mainstream programming language (e.g., Python, C++), with solid capabilities in code implementation, debugging, and optimization.</p>
+<p>3、Foundational Algorithm Expertise: Solid theoretical grounding and practical experience in core algorithms for medical signal processing and/or medical image processing, with proven ability to solve real-world problems using these techniques.</p>
+<p>4、Excellent Interpersonal and Team Skills: Strong communication abilities and a collaborative team spirit.</p>
+<p>5、Accountability and Collaboration: Commitment to completing assigned tasks on schedule and working proactively with colleagues to achieve team objectives.</p>
+<p><strong>Education Requirement:</strong> Master&rsquo;s degree or higher.</p>
+<p><strong>Compensation and Benefits:</strong></p>
+<p>1、Monthly salary: ¥5,000 – ¥10,000 (gross, before tax).</p>
+<p>2、Qualified candidates will receive priority consideration for PhD admission within our research group, subject to meeting the university&rsquo;s basic doctoral program requirements.</p>
+<p><strong>Application:</strong>
+Interested applicants should submit their CV to:
+Professor Han Xiao， Email: <a href="mailto:xiao_han@scu.edu.cn">xiao_han@scu.edu.cn</a></p>
+
+        </div>
+      </div>
+      
+      <div class="job-item">
+        <h2 class="job-title">Postdoctoral Position Available</h2>
+        
+        <div class="job-content">
+          <h3 id="our-research-group-is-committed-to-innovation-in-artificial-intelligence-driven-precision-medical-technology-focusing-on-four-major-areas-computational-pathology-multimodal-medical-imaging-analysis-intelligent-medical-signal-interpretation-and-intelligent-medical-device-development-we-aim-to-establish-a-comprehensive-algorithm-hardware-clinical-research-framework-by-developing-interpretable-ai-models-adaptive-analysis-frameworks-and-low-cost-monitoring-devices-we-address-clinical-challenges-in-cancer-diagnosis-disease-prediction-and-intraoperative-monitoring-we-sincerely-invite-postdoctoral-researchers-to-join-our-interdisciplinary-medical-engineering-innovation-team-to-collectively-achieve-the-mission-of-reducing-medical-costs-and-enhancing-diagnostictherapeutic-accessibility-while-benefiting-from-academic-development-pathways-and-industry-transformation-resources">Our research group is committed to innovation in artificial intelligence-driven precision medical technology, focusing on four major areas: computational pathology, multimodal medical imaging analysis, intelligent medical signal interpretation, and intelligent medical device development. We aim to establish a comprehensive &ldquo;algorithm-hardware-clinical&rdquo; research framework. By developing interpretable AI models, adaptive analysis frameworks, and low-cost monitoring devices, we address clinical challenges in cancer diagnosis, disease prediction, and intraoperative monitoring. We sincerely invite postdoctoral researchers to join our interdisciplinary medical-engineering innovation team to collectively achieve the mission of &ldquo;reducing medical costs and enhancing diagnostic/therapeutic accessibility,&rdquo; while benefiting from academic development pathways and industry transformation resources.</h3>
+<p><strong>Disciplinary Background Requirements:</strong></p>
+<p>Biomedical Engineering, Computer Science, Electronic Information, or related disciplines.</p>
+<p><strong>Position Requirements:</strong></p>
+<p>1、Meet Sichuan University’s postdoctoral recruitment requirements; must conduct postdoctoral research full-time, on-site.</p>
+<p>2、Under 35 years of age.</p>
+<p>3、Hold a doctoral degree obtained within the past three years.</p>
+<p>4、Possess a solid research foundation and strong Chinese/English writing skills; have published at least two high-impact papers in medical imaging or signal processing.</p>
+<p>5、Demonstrate independent research capabilities, strong self-motivation, responsibility, proactive work attitude, and excellent teamwork spirit.</p>
+<p><strong>Application Materials:</strong></p>
+<p>1、Personal CV (File name: Name-CV-Intended Supervisor)</p>
+<p>2、Recommendation letter from doctoral advisor</p>
+<p>3、Representative publications, monographs, patents, or awards reflecting the applicant’s highest academic achievements</p>
+<p><strong>Compensation:</strong> To be discussed in person.</p>
+<p><strong>Application:</strong>
+Interested applicants should submit their CV to:
+Professor Han Xiao， Email: <a href="mailto:xiao_han@scu.edu.cn">xiao_han@scu.edu.cn</a></p>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>

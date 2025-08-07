@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | </title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+<style>
+   
+  html {
+    height: 100% !important;
+    background-color: #F4F4F4 !important;
+  }
+  
+  body {
+    min-height: 100% !important;
+    background-color: #F4F4F4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .main-content, #content {
+    background-color: #F4F4F4 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+  }
+  
+   
+  .topdown-main {
+    background-color: #F4F4F4 !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .stick-motto-bar {
+    background-color: #F4F4F4 !important;
+    min-height: 100% !important;
+    width: 100% !important;
+  }
+</style>
+
+<div class="topdown-main">
+    
+    
+    
+    
+    
+     
+    
+
+    <div class="stick-motto-bar">
+        
+        <div class="stick-motto-column">
+            <div class="person" style="margin-top: 10px">
+                <div class="square-container">
+                    <a class="person-img-container" href="../../MIND_Lab/people/zhonglantang/">
+                        
+                            <img src="https://digitalimageprocessor.github.io/MIND_Lab/./images/people/TangZhongLan.jpg" alt="Zhonglan Tang">
+                            
+                        
+                    </a>
+                </div>
+                
+                
+                    <div class="person-title">Associate professor</div>
+                
+
+                <div>
+                    <div class="icons-container">
+                        
+
+                        
+
+                        
+                            <a class="icons" href="https://biomater.scu.edu.cn/info/1082/1422.htm">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/home.gif" alt="Homepage" height="30" width="30">
+                            </a>
+                        
+
+                        
+                        
+                        
+                            <a class="icons" href="mailto:tang.zhonglan@scu.edu.cn?subject=邮件标题&body=邮件内容">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/email.png" alt="Email" height="30" width="30">
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="detail-info">
+                <h1 id="zhonglan-tangassociate-professor-phd-in-engineeringassistant-to-the-director-of-the-institute-of-medical-device-regulatory-science-sichuan-university">Zhonglan Tang，Associate Professor, Ph.D. in Engineering，Assistant to the Director of the Institute of Medical Device Regulatory Science, Sichuan University</h1>
+<h1 id="education--work-experience">EDUCATION &amp; WORK EXPERIENCE：</h1>
+<p><strong>Work Experience:</strong></p>
+<p>Dec 2016 – Present, <strong>Distinguished Associate Researcher</strong>, Research Center for Biomaterials Engineering, Sichuan University</p>
+<p>Apr 2010 – Sep 2016, <strong>Specially Appointed Assistant</strong>, Institute of Advanced Biomedical Sciences, Tokyo Women&rsquo;s Medical University, Japan, Biomaterials/Regenerative Medicine</p>
+<p>Apr 2005 – Mar 2010, <strong>Postdoctoral Researcher</strong>, Institute of Advanced Biomedical Sciences, Tokyo Women&rsquo;s Medical University, Japan, Biomaterials/Regenerative Medicine</p>
+<p>Apr 2003 – Mar 2005, <strong>Young Research Assistant</strong>, Maeda Laboratory for Biotechnology, RIKEN, Japan, Biomacromolecules</p>
+<p>Apr 2002 – Mar 2003, <strong>Doctoral Researcher</strong>, Maeda Laboratory for Biotechnology, RIKEN, Japan, Biomacromolecules</p>
+<hr>
+<p><strong>Education:</strong></p>
+<p>Apr 2002 – Mar 2005, <strong>Ph.D.</strong> in Biomacromolecules, Department of Materials Physics and Chemistry, Graduate School of Engineering, Kyushu University, Japan</p>
+<p>Apr 2000 – Mar 2002, <strong>M.Eng.</strong> in Biomacromolecules, Department of Materials Physics and Chemistry, Graduate School of Engineering, Kyushu University, Japan</p>
+<p>Apr 1999 – Mar 2000, <strong>Research Student</strong>, Department of Applied Chemistry (Molecular), Faculty of Engineering, Kyushu University, Japan</p>
+<p>Sep 1994 – Jul 1998, <strong>B.Eng.</strong> in Polymer Materials, Department of Polymer Materials, College of Materials Science and Engineering, Sichuan University (formerly Sichuan United University), China</p>
+<h1 id="research-expertise">RESEARCH EXPERTISE：　</h1>
+<p>Tissue engineering, microfluidics, 3D printed biomaterials, regulatory science of medical devices, etc</p>
+<h1 id="projects">Projects：</h1>
+<p>1.form 2017 to 2019, funded by the Research Start-up Funding for Introduced Talent of Sichuan University, the project “Preparation and Recycling of Cell Membranes for Application in Artificial Vascular Tissue Engineering” was carried out with a funding of RMB 300,000.</p>
+<p>2.From 2018 to 2020, as the principal investigator, the “Development and Application of 3D-Printed Photosensitive Polylactic Acid (PLA) Biodegradable Scaffolds” project was hosted under the 13th Five-Year Plan National Key R&amp;D Program’s Key Special Project for Government-Level International Scientific and Technological Innovation Cooperation, with approved funding of 1.31 million yuan. Additionally,</p>
+<p>3.Participation in formulating multiple documents for the National Medical Products Administration (NMPA) was undertaken, including <em>Good Clinical Practice (GCP) for Medical Devices</em>, <em>Guidelines for Preparing Registration Documents for Drug-Containing Medical Devices</em>, <em>Guidelines for Classification and Definition of Tissue Engineering Medical Products</em>, and <em>GCP Safety Information Handling Guidelines for Regulatory Authorities</em>.</p>
+<h1 id="representative-papers">Representative Papers：</h1>
+<p>[1]Song X, Tang Z, Liu W, et al. Biomaterials and regulatory science[J]. Journal of Materials Science &amp; Technology, 2022, 128: 221-227.</p>
+<p>[2] Zuo S, Lan X, Wang Y, et al. Preparation and characterization of photopolymerized poly (l-lactide-co-ε-caprolactone-co-N-vinyl-2-pyrrolidone) network as anti-biofouling materials[J]. RSC advances, 2022, 12(14): 8708-8718.</p>
+<p>[3]Wang Y, Lan X, Zuo S, et al. Photopolymerized poly (l-lactide-bN-vinyl-2-pyrrolidone) network resists cell adhesion in situ[J]. RSC advances, 2021, 11(34): 20997-21005.</p>
+<p>[4]Tang Z, Takarada T, Maeda M. Non-cross-linking aggregation of DNA-carrying polymer micelles triggered by duplex formation[J]. Langmuir, 2018, 34(49): 14899-14910.</p>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link rel="icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="https://digitalimageprocessor.github.io/MIND_Lab/images/HBMI_favicon.png" type="image/png" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style1NavFooter.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style2Home.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style3People.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style4Publications.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style5News.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style6Events.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style7About.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style8Admonition.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://digitalimageprocessor.github.io/MIND_Lab/css/APlayer.min.css">
+
+
+
+<title>MIND Lab | </title>
+
+</head>
+<body>
+  
+  <div class="layout-container">
+    
+    <aside class="sidebar">
+  <div class="sidebar-content">
+    
+    <div class="sidebar-header">
+      
+        
+        <div class="navbar-logo img-logo">
+          <img 
+            src="https://digitalimageprocessor.github.io/MIND_Lab/images/MIND.png" 
+            alt="MIND Lab" 
+            height="60"
+          >
+        </div>
+      
+    </div>
+
+    
+    <nav class="sidebar-nav">
+      <ul class="menu-list">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/"
+            >
+              Home
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/research"
+            >
+              Research
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="active-item">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/people"
+            >
+              People
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/publications"
+            >
+              Publications
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/news"
+            >
+              News
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="">
+            <a 
+              class="nav-link" 
+              href="https://digitalimageprocessor.github.io/MIND_Lab/recruitment"
+            >
+              Recruitment
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<style>
+  :root {
+     
+    --sidebar-width: 360px; 
+     
+    --nav-item-total-height: 95px;
+     
+    --nav-item-content-height: 45px;
+     
+    --nav-item-padding: 0 1.5rem;
+     
+    --nav-item-spacing: calc(var(--nav-item-total-height) - var(--nav-item-content-height));
+     
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    --primary-color: #172E5C;
+    --active-color: #007bff;
+    --active-bg: #e1f0ff;
+    --text-color: #333;
+    --hover-bg: #e9ecef;
+    --font-family: "Segoe UI", Tahoma, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --logo-font-size: 1.8rem;
+    --nav-font-size: 2rem;
+    --border-color: #eee;
+    --logo-bottom-margin: 1.5rem;  
+    --content-top-offset: 3rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width);
+    max-width: none;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--sidebar-shadow);
+    overflow: hidden;
+    font-family: var(--font-family);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem;
+    box-sizing: border-box;
+    top: var(--content-top-offset);
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 0 1.5rem;
+    border-bottom: none;
+    margin-bottom: var(--logo-bottom-margin);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-list li {
+    width: 100%;
+    height: var(--nav-item-total-height);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--nav-item-content-height);
+    padding: var(--nav-item-padding);
+    color: var(--text-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-list li:hover {
+    background-color: var(--hover-bg);
+  }
+
+  .menu-list li:hover .nav-link {
+    padding-left: calc(1.5rem + 5px);
+  }
+
+  .menu-list li.active-item {
+    background-color: var(--active-bg);
+    border-left: 3px solid var(--active-color);
+    width: 100%;
+    height: var(--nav-item-total-height);
+  }
+
+  .menu-list li.active-item .nav-link {
+    color: var(--active-color);
+    font-weight: 500;
+    background: transparent;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --sidebar-width: 80px;
+      --nav-item-padding: 0;
+      --nav-font-size: 0.9rem;
+    }
+
+    .nav-link {
+      justify-content: center;
+    }
+
+    .menu-list li:hover .nav-link {
+      padding-left: 0;
+    }
+
+    .menu-list li.active-item {
+      border-left: none;
+      border-bottom: 2px solid var(--active-color);
+    }
+  }
+
+  .navbar-logo {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-logo.text-logo {
+    font-size: var(--logo-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+
+  .img-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .img-logo:hover img {
+    transform: scale(1.03);
+  }
+</style>
+    
+
+    
+    <main class="main-content">
+      <div id="content">
+        
+<style>
+   
+  html {
+    height: 100% !important;
+    background-color: #F4F4F4 !important;
+  }
+  
+  body {
+    min-height: 100% !important;
+    background-color: #F4F4F4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .main-content, #content {
+    background-color: #F4F4F4 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+  }
+  
+   
+  .topdown-main {
+    background-color: #F4F4F4 !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+   
+  .stick-motto-bar {
+    background-color: #F4F4F4 !important;
+    min-height: 100% !important;
+    width: 100% !important;
+  }
+</style>
+
+<div class="topdown-main">
+    
+    
+    
+    
+    
+     
+    
+
+    <div class="stick-motto-bar">
+        
+        <div class="stick-motto-column">
+            <div class="person" style="margin-top: 10px">
+                <div class="square-container">
+                    <a class="person-img-container" href="../../MIND_Lab/people/linghe/">
+                        
+                            <img src="https://digitalimageprocessor.github.io/MIND_Lab/./images/people/HeLing.png" alt="Ling He">
+                            
+                        
+                    </a>
+                </div>
+                
+                
+                    <div class="person-title">Associate professor</div>
+                
+
+                <div>
+                    <div class="icons-container">
+                        
+
+                        
+
+                        
+                            <a class="icons" href="https://bme.scu.edu.cn/info/1090/1470.htm">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/home.gif" alt="Homepage" height="30" width="30">
+                            </a>
+                        
+
+                        
+                        
+                        
+                            <a class="icons" href="mailto:ling.he@scu.edu.cn?subject=邮件标题&body=邮件内容">
+                                <img align="center" src="https://digitalimageprocessor.github.io/MIND_Lab/images/email.png" alt="Email" height="30" width="30">
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="detail-info">
+                <h1 id="ling-he-associate-professor-phd-in-engineering-member-of-the-communist-party-of-china-masters-supervisor">Ling He, Associate Professor, Ph.D. in Engineering, Member of the Communist Party of China, Master&rsquo;s Supervisor</h1>
+<h1 id="education---work-experience">EDUCATION  &amp; WORK EXPERIENCE：</h1>
+<p>2011 – Present，<strong>Associate Head</strong>, Department of Medical Information Engineering, College of Biomedical Engineering, Sichuan University</p>
+<p>2007.09 – 2011.06， <strong>Ph.D</strong>. in Electronic and Computer Engineering，School of Engineering, RMIT University, Australia</p>
+<p>2004.09 – 2007.06，  <strong>M.Eng.</strong> in Signal and Information Processing，Sichuan University, China</p>
+<p>2000.09 – 2004.06，  <strong>B.Eng.</strong> in Communication Engineering，Department of Communication Engineering, Sichuan University, China</p>
+<h1 id="research-expertise">RESEARCH EXPERTISE：</h1>
+<p>Medical signal processing, medical image processing</p>
+<h1 id="admission-information">Admission Information：　　</h1>
+<p>1、Master of Science, Biomedical Engineering/Biomedical Image Processing</p>
+<p>2、Professional Master&rsquo;s Degree, Electronic Information/Biomedical Engineering</p>
+<h1 id="porjects">Porjects：</h1>
+<p>1.Sichuan Provincial Sci-Tech Department General Project, <em>&ldquo;Voice Feature Recognition and Intelligent Diagnosis System for Children with Attention-Deficit/Hyperactivity Disorder (ADHD)&rdquo;</em>, 2019.01–2021.01</p>
+<p>2.Sichuan Provincial Sci-Tech Department Applied Basic Research Project, <em>&ldquo;Music Therapy’s Physiological Response Mechanism and Automated Efficacy Assessment: A Case Study of Traditional Chinese Music&rdquo;</em>, 2019.01–2020.01</p>
+<p>3.Sichuan University Spark Project Library, <em>&ldquo;Research on Automated Schizophrenia Recognition Algorithm Based on Speech Signal Analysis&rdquo;</em>, 2018.09–2021</p>
+<p>4.National Natural Science Foundation of China (NSFC) Young Scientists Fund, <em>&ldquo;Key Technologies for Automatic Hypernasality Severity Recognition in Cleft Palate Speech&rdquo;</em>, 2016.01–2018.12</p>
+<h1 id="representative-articles">Representative Articles：</h1>
+<p>[1] Fei He, Xiyue Wang, Heng Yin, Han Zhang, Gang Yang, and <strong>Ling He</strong>. Acoustic analysis and detection of pharyngeal fricative in cleft palate speech using correlation of signals in independent frequency bands and octave spectrum prominent peak. BioMedical Engineering OnLine, 2020, 19(1): 1-27.</p>
+<p>[2] Fei, He; Jia, Fu; <strong>Ling, He</strong>; Yuan, Li; Xi, Xiong. Automatic detection of negative symptoms in schizophrenia via acoustically measured features associated with affective flattening. IEEE Transactions on Automation Science and Engineering, 2020.</p>
+<p>[3] Jing Zhang, Sen Yang, Xiyue Wang, Ming Tang, Heng Yin, and <strong>Ling He</strong>. Automatic hypernasality grade assessment in cleft palate speech based on the spectral envelope method. Biomedical Engineering/Biomedizinische Technik, 2020, 65(1): 73-86.</p>
+<p>[4] <strong>Ling He</strong>, M. Lech, N. Maddage and N. Allen, Emotion Recognition in Speech of Parents of Depressed Adolescents, 2009 3rd International Conference on Bioinformatics and Biomedical Engineering, Beijing, 2009, pp. 1-4.</p>
+<p>[5] Lech M., <strong>Ling He</strong>. (2014) Stress and Emotion Recognition Using Acoustic Speech Analysis. In: Lech M., Song I., Yellowlees P., Diederich J. (eds) Mental Health Informatics. Studies in Computational Intelligence, vol 491. Springer, Berlin, Heidelberg.</p>
+<p>[6] <strong>Ling He</strong>, Lech, Margaret, Allen, Nicholas. (2010). On the importance of glottal flow spectral energy for the recognition of emotions in speech. Proceedings of the 11th Annual Conference of the International Speech Communication Association, INTERSPEECH 2010. 2346-2349.</p>
+<p>[7] <strong>Ling He</strong>; Lech, Margaret; Zhang, Jing; etc. Study of Wavelet Packet Energy Entropy for Emotion Classification in Speech and Glottal Signals, ICDIP 2013, Proceedings of SPIE, Vol 8878, Beijing, China, APR 21-22, 2013.</p>
+<p>[8] <strong>何凌</strong>，袁亚南，尹恒，张桠童，张劲，刘奇，李杨, 腭裂语音高鼻音等级自动识别算法研究，四川大学学报(工程科学版)，46(2)，pp: 127-132，2014.</p>
+<p>[9] 孟雨璇;袁尉;李雯;邓丽华;<strong>何凌</strong>;李元媛. 基于语音音调域动态特征的精神分裂症自动检测算法[J].计算机应用与软件,2022</p>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      </div>
+      
+      
+
+
+<script src="https://digitalimageprocessor.github.io/MIND_Lab//js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="https://digitalimageprocessor.github.io/MIND_Lab//js/jump.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.querySelector('.menu-button');
+    var menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function () {
+        menuList.classList.toggle('active');
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      
+      $(".clickable").click(function () {
+          
+          $(this).next(".hidden").slideToggle();
+      });
+  });
+</script>
+
+
+    </main>
+  </div>
+
+  
+  <style>
+     
+    .layout-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+     
+    .sidebar {
+      width: 280px;         
+      min-height: 100vh;    
+      background: #f8f9fa;  
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      flex-shrink: 0;  
+      position: sticky;
+      top: 0;
+    }
+
+     
+    .navbar-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .img-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+     
+    .sidebar-nav .menu-list {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-link {
+      display: block;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #444;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background: #e9ecef;
+    }
+     
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+      background: #e1f0ff;
+    }
+
+     
+    .main-content {
+      flex-grow: 1;  
+      padding: 20px 40px;
+    }
+
+     
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      .navbar-logo.text-logo {
+        font-size: 0;
+      }
+      .nav-link {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>
